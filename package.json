@@ -1,0 +1,11 @@
+{
+  "name": "ai-web-card",
+  "version": "1.0.0",
+  "description": "一键将网页链接转化为包含智能摘要+二维码的精美分享卡片",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r manifest.json popup.html styles scripts assets dist/"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1"
+  }
+} 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI Web Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/core.css">
+  <link rel="stylesheet" href="styles/templates.css">
+</head>
+<body>
+  <div class="container">
+    <div id="loading" class="loading-container" style="display: none;">
+      <div class="loading-spinner"></div>
+      <p>Generating AI share card...</p>
+    </div>
+    
+    <div id="card-preview" class="card-preview">
+      <div class="card">
+        <div class="card-date"></div>
+        <h1 class="card-title"></h1>
+        <div class="card-summary"></div>
+        <ul class="card-points"></ul>
+        <div class="card-footer">
+          <div id="qrcode"></div>
+          <div class="qr-info">
+            <h3 class="qr-title">Scan to read more</h3>
+            <p class="qr-subtitle"></p>
+            <span class="platform"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="downloadBtn" class="btn primary">Download Card</button>
+      <button id="copyBtn" class="btn secondary">Copy Card</button>
+    </div>
+  </div>
+
+  <script src="scripts/qrcode.min.js"></script>
+  <script src="scripts/html2canvas.min.js"></script>
+  <script src="scripts/core.js"></script>
+  <script src="scripts/template.js"></script>
+</body>
+</html> 
