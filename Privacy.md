@@ -7,21 +7,13 @@ AI Web Card is designed for a single purpose: to transform web pages into beauti
 
 ### Required Permissions
 
-1. **activeTab Permission**
+ **activeTab Permission**
    - Purpose: To access and analyze the content of the currently active tab
    - Usage: This permission is essential for:
      - Extracting webpage metadata (title, description, author)
      - Reading page content for AI summary generation
      - Creating accurate share cards based on the current page
    - Justification: Without this permission, the extension would not be able to access the webpage content to generate summaries and share cards
-
-2. **scripting Permission**
-   - Purpose: To inject and execute content scripts in the active tab
-   - Usage: This permission is required for:
-     - Extracting webpage metadata and content
-     - Manipulating DOM elements for card generation
-     - Handling dynamic content processing
-   - Justification: This permission is necessary to interact with webpage content and generate accurate share cards
 
 ### Data Collection and Usage
 - The extension only processes webpage content when explicitly activated by the user
